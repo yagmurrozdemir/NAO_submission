@@ -1,0 +1,3 @@
+HOW TO RUN:
+1. First, do “python3 play_sequence.py 0.0.0.0 --motions-dir ./motions --music ./our_music.mp3 --speed-factor 1” with your music’s path and the path on your computer to the motions folder. This generates a file called “sequences.txt” that will be used in the second step.
+2. Modify the paths in run_robot.py according to your own paths on your computer. The song and the motions folder should be on a path that is modifiable and accessible by the process. Then either do “python run_robot.py” if you want to use CLI for the robot or if you want to use Choreographe then put the content of the run_robot.py file into a Python script in Choreographe and connect its start and end signals to the start and end signal of the behavior you are modifying.
